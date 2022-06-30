@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    max-width: 100vw;
+}
+.container{
+    background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(../images/img2.jpg)no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.container>header{
+    padding: 20px;
+}
+.container>header>nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container>header>nav>#icon{
+    color: #094b65;
+    background-color: #fff;
+    padding: 1%;
+    clip-path: circle();
+}
+.container>header>nav .fa-bars{
+    display: none;
+}
+.container>header>nav>ul .fa-xmark{
+    display: none;
+}
+.container>header>nav>h1{
+    color: #fff;
+}
+.container>header>nav>ul{
+    list-style-type: none;
+}
+.container>header>nav>ul>li>.active{
+    color: #f44336;
+}
+.container>header>nav>ul>li>.active::after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: #f44336;
+    display: block;
+    border-radius: 20px;
+    margin: auto;
+}
+.container>header>nav>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+.container>header>nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.container>header>nav>ul>li>a::after{
+    content: "";
+    height: 5px;
+    width: 0%;
+    background-color: #f44336;
+    display: block;
+    border-radius: 20px;
+    margin: auto;
+    transition: 0.5s;
+}
+.container>header>nav>ul>li:hover a::after{
+    width: 100%;
+}
+.container>header>nav>ul>li:hover a{
+    color: #f44336;
+}
+.container>header>.adventure{
+    display: flex;
+    justify-content:flex-start;
+}
+.container>header>.adventure>div{
+    text-align: center;
+    margin-top: 150px;
+}
+.container>header>.adventure>div>h1{
+    color: #fff;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 4rem;
+}
+.container>header>.adventure>div>p{
+    color: #fff;
+    margin: 20px;
+}
+.container>header>.adventure>div>a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #f44336;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.container>header>.adventure>div>a:hover{
+    padding: 1% 2%;
+}
+.container1{
+    width: 100%;
+    margin: 50px auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container1>.row>.text{
+   width: 50%;
+   margin-left: 20px;
+   height: 100%;
+}
+.container1>.row>.text>h1{
+    font-size: 3rem;
+}
+.container1>.row>.text>h1::first-letter{
+    font-size: 4rem;
+    color: #f44336;
+}
+.container1>.row>.text>p{
+    margin: 0px auto 10px;
+}
+.container1>.row>.text>a{
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #f44336;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+.container1>.row>.text>a:hover{
+    background-color: #f44336;
+    color: #fff;
+}
+.container1>.row>.img{
+    width: 50%;
+    margin-left: 20px;
+}
+.container1>.row>.img>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.container1>.row>.img>div>img{
+    width: 250px;
+    transition: 0.5s;
+}
+.container1>.row>.img>div>img:hover{
+    transform: scale(0.9);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+.contact>.heading>h1{
+    font-size: 3rem;
+}
+.contact>.heading>h1::first-letter{
+    font-size: 4rem;
+    color: #f44336;
+}
+.contact>.row>.form-msg{
+    width: 50%;
+}
+.contact>.row>.form-msg>form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    padding: 50px 30px 70px;
+    height: 100%;
+    width: 100%;
+    box-shadow: -2px -2px 5px #000, 2px 2px 5px #000;
+    border-radius: 10px;
+}
+.contact>.row>.form-msg>form>input , .contact>.row>.form-msg>form>textarea{
+    width: 100%;
+}
+.contact>.row>.form-msg>form>button{
+    padding: 5px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+}
+.contact>.row>.form-msg>form>button:hover{
+    color: #000;
+    box-shadow: -2px -2px 5px #000, 2px 2px 5px #000;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.contact>.row>.msg{
+    width: 400px;
+}
+.contact>.row>.msg>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact>.row>.img>div>img{
+    height: 100%;
+    width: 400px;
+    margin: 20px;
+}
+footer{
+    background-color: #20334b;
+    text-align: center;
+    color: #fff;
+}
+footer>p{
+    font-size: 0.7rem;
+}
+.fa-brands{
+    margin: 10px;
+    transition: 1s;
+    font-size: 1.5rem;
+}
+.fa-brands:hover{
+    transform: scale(1.5);
+}

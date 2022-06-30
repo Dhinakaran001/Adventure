@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="container">
+            <header>
+                <nav>
+                    <i class="fa-solid fa-tree-city fa-2x" id="icon"></i>
+                    <ul id="js">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#welcome">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Product</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars" id="bars" onclick="showMenu()"></i>
+                </nav>
+                <div class="adventure">
+                    <div>
+                        <h1>Adventure</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quaerat dignissimos soluta error asperiores</p>
+                        <a href="#">GET STARTED</a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section class="container1" id="welcome">
+            <div class="row">
+                <div class="text">
+                    <h1>Welcome</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus maiores dolor saepe ad non provident id, ex pariatur deleniti sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta adipisci perspiciatis accusantium nostrum, quae nesciunt labore explicabo voluptatem dolor illo facilis perferendis eos assumenda ex dignissimos quaerat saepe quibusdam!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="img">
+                    <div>
+                        <img src="assets/images/img3.jpg" alt="">
+                        <img src="assets/images/img4.jpg" alt="">
+                        <img src="assets/images/img5.jpg" alt="">
+                        <img src="assets/images/img6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="row">
+               <div class="form-msg">
+                    <form action="" autocomplete="off">
+                        <label for="">Send Message</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Eamil">
+                        <textarea name="message" placeholder="message" id="" cols="20" rows="3"></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+               </div>
+               <div class="img">
+                    <div>
+                        <img src="assets/images/img9.png" alt="">
+                    </div>
+               </div>
+            </div>
+        </section>
+        <footer>
+            <p>@ Copy rights 2020-2021 All Rights Reservsd</p>
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-youtube-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-snapchat-square"></i>
+        </footer>
+
+        <script>
+            var nav = document.getElementById("js");
+
+            function showMenu() {
+                nav.style.left = "0";
+            }
+            function hideMenu() {
+                nav.style.left = "-100%";
+            }
+        </script>
+    </body>
+</html>
