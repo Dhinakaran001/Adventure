@@ -210,15 +210,19 @@ body{
     justify-content: center;
     align-items: center;
 }
-.contact>.row>.img>div>img{
+.contact>.row>.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
     height: 100%;
-    width: 400px;
-    margin: 20px;
 }
 footer{
     background-color: #20334b;
     text-align: center;
     color: #fff;
+    position: relative;
+    margin-top: 30px;
 }
 footer>p{
     font-size: 0.7rem;
