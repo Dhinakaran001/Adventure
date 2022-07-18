@@ -75,7 +75,7 @@
         margin-top: 100px;
     }
     .container1>.row>.text{
-        padding-left: 20px;
+        margin-left: 0px;
     }
     .contact>.row>.form-msg>form{
         margin-left: -20px;
